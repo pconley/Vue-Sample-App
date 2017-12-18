@@ -66,12 +66,12 @@ export default {
       this.$emit('delete-todo', todo);
     },
     completeTodo(todo) {
-        console.log('*** complete');
-        // the turorial passes the event up to the parent
-        //this.$emit('complete-todo', todo);
-        // but why not just apply the change directly???
-        todo.done = true; 
-      },
+      console.log('*** complete');
+      // the turorial passes the event up to the parent
+      this.$emit('complete-todo', todo);
+      // but why not just apply the change directly???
+      // todo.done = true;
+    },
   },
 };
 </script>
